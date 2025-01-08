@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABLE</title>
+    <link rel="stylesheet" href="table.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  </head>
+<body class=" m-5">
+
+    <div id="big1" class=" container mt-4">
+        <div class="row g-2 align-items-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <select name="gender" class="form-select" id="gender1">
+              <option value="MALE" id="male1" selected>MALE</option>
+              <option value="FEMALE" id="female1">FEMALE</option>
+              
+            </select>
+          </div>
+          <div class="col-12 col-sm-auto">
+            <button id="add_row_male" class="btn btn-info">Add Row</button>
+          </div>
+          <div class="col-12 col-sm-auto">
+            <button id="add_row_female" class="btn btn-info">Add Row</button>
+          </div>
+        </div>
+      </div>
+
+    <div id="big2" class="row d-flex  justify-content-center align-items-center">
+    <div class="col-8  d-flex  justify-content-center align-items-center">
+      <!-- /////////////////////////////////////// -->
+    <table id="table_both" class="table">
+        <thead id="thead_both">
+          <tr>
+            <th  scope="col">Sr No.</th>
+            <th  scope="col">Name</th>
+            <th  scope="col">Fathers Name</th>
+            <th  scope="col">Age</th>
+            <th  scope="col">Delete</th>
+          </tr>
+        </thead>
+        <!-- ///////////////////////////////////// -->
+        <tbody id="tbody_male">
+          <tr>
+            <th  scope="row" class="sr_num_male">1</th>
+            <td contenteditable="true" class="name_of_person_class">Fahad</td>
+            <td contenteditable="true">Ali</td>
+            <td contenteditable="true">18</td>
+            <td><button contenteditable="false" class="btn btn-danger delete_btn_male">Delete</button></td>
+          </tr>
+          <tr>
+            <th  scope="row" class="sr_num_male">2</th>
+            <td contenteditable="true" class="name_of_person_class">Ali</td>
+            <td contenteditable="true">Raza</td>
+            <td contenteditable="true">23</td>
+            <td><button contenteditable="false" class="btn btn-danger delete_btn_male">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row" class="sr_num_male">3</th>
+            <td contenteditable="true" class="name_of_person_class">Hassan</td>
+            <td contenteditable="true">Muzamil</td>
+            <td contenteditable="true">44</td>
+            <td><button contenteditable="false" class="btn btn-danger delete_btn_male">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row" class="sr_num_male">4</th>
+            <td contenteditable="true" class="name_of_person_class">Sam</td>
+            <td contenteditable="true">Asad</td>
+            <td contenteditable="true">34</td>
+            <td><button contenteditable="false" class="btn btn-danger delete_btn_male">Delete</button></td>
+          </tr>
+        </tbody>    
+  
+      <!-- //////////////////////////////////////// -->
+
+        <tbody id="tbody_female">
+          <tr>
+            <th  scope="row" class="sr_num_female">1</th>
+            <td contenteditable="true" class="name_of_person_class">SHSABNA</td>
+            <td contenteditable="true">RAFIQ</d>
+            <td contenteditable="true">17</td>
+            <td><button contenteditable="false" class="btn btn-danger delete_btn_female">Delete</button></td>
+          </tr>
+          <tr>
+            <th  scope="row" class="sr_num_female">2</th>
+            <td contenteditable="true" class="name_of_person_class">Sana</td>
+            <td contenteditable="true">RAZA</td>
+            <td contenteditable="true">23</td>
+            <td><button contenteditable="false" class="btn btn-danger delete_btn_female">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row" class="sr_num_female">3</th>
+            <td contenteditable="true" class="name_of_person_class">JANE</td>
+            <td contenteditable="true">SAM</td>
+            <td contenteditable="true">22</td>
+            <td><button contenteditable="false" class="btn btn-danger delete_btn_female">Delete</button></td>
+          </tr>
+          <tr>
+            <th scope="row" class="sr_num_female">4</th>
+            <td contenteditable="true" class="name_of_person_class">LAURA</td>
+            <td contenteditable="true">RUDRA</td>
+            <td contenteditable="true">28</td>
+            <td><button contenteditable="false" class="btn btn-danger delete_btn_female">Delete</button></td>
+          </tr>
+        </tbody> 
+      </table>             
+    </div>      
+</div>  
+
+<!-- //////////////////////////////////////////////////////// -->
+<div id="alert">
+  <div id="alert-box">
+    <p id="name_display"></p>
+    <div id="alert-buttons">
+      <div id="btns">
+        <button id="okbtn" class="btn btn-danger mx-2">OK</button>
+        <button id="cancelbtn" class="btn btn-light">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="table.js"></script>
+</body>
+</html>

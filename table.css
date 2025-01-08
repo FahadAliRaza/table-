@@ -1,0 +1,35 @@
+body {
+  background: linear-gradient(to left, rgb(97, 97, 184), skyblue, lightblue);
+}
+
+#gender1 {
+  text-align: center;
+}
+
+#alert {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+#alert-box {
+  background: linear-gradient(to right, rgb(97, 97, 184), skyblue, lightblue);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+#btns {
+  display: flex;
+  justify-self: center;
+}
+
+p {
+  font-weight: bold;
+}
